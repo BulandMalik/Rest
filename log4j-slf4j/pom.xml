@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>bmalik-webapp</groupId>
+  <artifactId>log4j-slf4j</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>log4j-slf4j Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+	<properties>
+		<log4j.version>1.2.17</log4j.version>
+		<sl4fj.version>1.7.10</sl4fj.version>
+		<jersey.version>2.13</jersey.version>
+	</properties>
+  <dependencies>
+		    <dependency>
+		      <groupId>junit</groupId>
+		      <artifactId>junit</artifactId>
+		      <version>3.8.1</version>
+		      <scope>test</scope>
+		    </dependency>
+
+            <!-- Logging -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
+            </dependency>
+			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>apache-log4j-extras</artifactId> <!-- for org.apache.log4j.rolling.RollingFileAppender -->
+				<version>1.1</version>
+				<scope>compile</scope>
+			</dependency>            
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${sl4fj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${sl4fj.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${sl4fj.version}</version>
+            </dependency>
+                
+		<!-- Jersey -->
+		<dependency>
+			<groupId>org.glassfish.jersey.ext</groupId>
+			<artifactId>jersey-spring3</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<version>${jersey.version}</version>
+		</dependency>
+	    <dependency>
+	      <groupId>org.glassfish.jersey.connectors</groupId>
+	      <artifactId>jersey-apache-connector</artifactId>
+			<version>${jersey.version}</version>
+	    </dependency>
+                        
+  </dependencies>
+  
+  <build>
+    <finalName>log4j-slf4j</finalName>
+  </build>
+
+</project>
