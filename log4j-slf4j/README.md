@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 eclipse JEE + tomcat 7 server(embedded in eclipse)
 
 runtime jar required(for tomcat 7):
@@ -23,16 +22,3 @@ javax.ws.rs-api-2.0.jar
 
 url:
 http://host:port/log4j-slf4j/logging ... for example ... http://localhost:8080/log4j-slf4j/logging
-
-=======
-# Rest
-
-##Tutorial
-1. http://williamdurand.fr/2014/02/14/please-do-not-patch-like-an-idiot/
-2. http://www.restapitutorial.com/lessons/idempotency.html
-3. 
-
-
-##frameworks to build REST API's
-1. https://thrift.apache.org/
->>>>>>> a4bf1aa449fda0db490412f1d510ef8759716ad4
